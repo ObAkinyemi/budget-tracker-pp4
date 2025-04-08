@@ -10,10 +10,19 @@ function display_budget () {
     // }
 
 }
-function expense () {
-    let expense
+function expense (name, worth, category) {
+    // let name = document.getElementById("expense_name");
+    // let worth = document.getElementById("expense_worth");
+    // let category = document.getElementById("expense_type");
+    // let expense_button = document.getElementById("add_exp_button");
+    console.log(name);
+    console.log(worth);
+    console.log(category);
 }
 
+function store_expense () {
+    
+}
 function liability () {
 
 }

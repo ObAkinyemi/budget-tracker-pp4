@@ -22,7 +22,7 @@
         <span>
             <div>
                 <input type="text" placeholder="Expense Name" id="expense_name">
-                <input type="number" placeholder="Expense Worth" id="expense_worth">
+                <input type="text" placeholder="Expense Worth" id="expense_worth">
                 <select name="Investment type" id="expense_type">
                     <option value="expense type">Expense Type</option>
                     <option value="personal">Personal</option>
@@ -30,7 +30,9 @@
                     <option value="fixed">Recurring</option>
                 </select>
 
-                <button>Add Expense</button>
+                <button id="add_exp_button" onclick="expense(document.getElementById('expense_name').value,
+                Number(document.getElementById('expense_worth').value),
+                document.getElementById('expense_type').value)">Add Expense</button>
 
             </div>
             <div>
