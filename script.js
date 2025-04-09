@@ -1,5 +1,6 @@
 
 // console.log(budget);
+expense_storage = [];
 
 function display_budget () {
     let budget = document.getElementById("BudgetInput");
@@ -18,10 +19,13 @@ function expense (name, worth, category) {
     console.log(name);
     console.log(worth);
     console.log(category);
+    return {name, worth, category};
 }
 
 function store_expense () {
-    
+    expense_storage.push(expense());
+    console.log(expense_storage);
+    return expense_storage;
 }
 function liability () {
 
