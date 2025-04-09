@@ -30,9 +30,7 @@
                     <option value="fixed">Recurring</option>
                 </select>
 
-                <button id="add_exp_button" onclick="expense(document.getElementById('expense_name').value,
-                Number(document.getElementById('expense_worth').value),
-                document.getElementById('expense_type').value); store_expense();">Add Expense</button>
+                <button id="add_exp_button" onclick="handleAddExpense()">Add Expense</button>
 
             </div>
             <div>
@@ -47,7 +45,7 @@
                     <option value="business">Business</option>
                     <option value="retirement">Retirement/Compounding</option>
                 </select>
-                <button>Add Investment</button>
+                <button id="add_invest_btn" onclick="handleAddInvestment()">Add Investment</button>
             </div>
 
         </span>
