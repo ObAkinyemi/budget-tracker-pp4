@@ -13,10 +13,11 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        
         <span>
             What's Your Budget?
             <input id="BudgetInput" type="text" placeholder="Budget">
-            <button onclick="display_budget()">Enter</button>
+            <button onclick="handleBudget()">Enter</button>
         </span>
         <div></div>
         <span>
@@ -29,7 +30,7 @@
                     <option value="family">Family</option>
                     <option value="fixed">Recurring</option>
                 </select>
-
+                
                 <button id="add_exp_button" onclick="handleAddExpense()">Add Expense</button>
 
             </div>
@@ -48,6 +49,7 @@
                 <button id="add_invest_btn" onclick="handleAddInvestment()">Add Investment</button>
             </div>
 
+            <div id="budget-disp"></div>
         </span>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
