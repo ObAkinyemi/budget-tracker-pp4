@@ -37,7 +37,7 @@ function net_Budget(expenses, investments) {
     const sumInvestments = investments.reduce((total, investment) => total + Number(investment.worth), 0);
     console.log("Total investments:", sumInvestments);
 
-    return sumInvestments - sumExpenses;
+    return budget.value + sumInvestments - sumExpenses;
 }
 
 function invest_tot(arr, key) {
